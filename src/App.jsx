@@ -30,8 +30,9 @@ const App = () => {
             backgroundColor: '#50B2DA',
             p: 1, textAlign: 'center'
           }}
+          component= 'span'
         >
-          This is a Box, not a div
+          Is not a Box, is a span
         </Box>
       </Container>
 
