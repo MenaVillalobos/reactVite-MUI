@@ -22,17 +22,17 @@ const App = () => {
         >
           This is an h2 component that behaves like a paragraph
         </Typography>
-        <Button variant="contained" sx = {{ bgcolor: '#04DAB1', marginBottom: 2, marginTop: 2 }}>
+        <Button variant="contained" sx = {{ bgcolor: 'secondary', marginBottom: 2, marginTop: 2 }}>
           1st MUI Button
         </Button>
         <Box
           sx ={{
-            backgroundColor: '#50B2DA',
-            p: 1, textAlign: 'center'
+            backgroundColor: 'primary.box',
+            p: 1, textAlign: 'center',
+            color: 'white'
           }}
-          component= 'span'
         >
-          Is not a Box, is a span
+          This is a Box, not a div
         </Box>
       </Container>
 
