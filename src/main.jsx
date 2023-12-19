@@ -12,7 +12,7 @@ import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 
 const darkTheme = createTheme ({
   palette:{
-    mode: 'dark',
+    mode: 'light',
       primary: {
         main: '#0288d1',
         box: '#4DD0E1'

@@ -3,7 +3,7 @@ import { Button, Container, Typography, Box } from "@mui/material";
 const App = () => {
   return (
     <>
-      <Container maxWidth = 'xs' sx = {{ border: 2, borderColor: '#1ABC9C', p: 2 }}>
+      <Container maxWidth = 'xs' sx = {{ border: 2, borderColor: '#1ABC9C', p: 2, marginTop: 4 }}>
         <h1>My First App w/MUI</h1>
         <Typography variant = 'h2' sx = {{ boxShadow: 3, marginBottom: 2 }} >
           This is an h2 component
@@ -22,8 +22,35 @@ const App = () => {
         >
           This is an h2 component that behaves like a paragraph
         </Typography>
-        <Button variant="contained" sx = {{ bgcolor: 'secondary', marginBottom: 2, marginTop: 2 }}>
-          1st MUI Button
+        <Button 
+          variant='text'
+          sx = {
+            { bgcolor: 'secondary',
+            marginBottom: 2,
+            marginTop: 2
+            }
+          } >
+          TEXT
+        </Button>
+        <Button
+        variant='contained'
+        sx = {
+          { bgcolor: 'secondary',
+          marginBottom: 2,
+          marginTop: 2
+          }
+        } >
+          CONTAINED
+        </Button>
+        <Button
+        variant='outlined'
+        sx = {
+          { bgcolor: 'secondary',
+          marginBottom: 2,
+          marginTop: 2 
+          }
+        } >
+          OUTLINED
         </Button>
         <Box
           sx ={{
