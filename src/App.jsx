@@ -43,14 +43,14 @@ const App = () => {
           CONTAINED
         </Button>
         <Button
-        variant='disabled'
+        variant='outlined'
         sx = {
           { bgcolor: 'secondary',
           marginBottom: 2,
           marginTop: 2 
           }
         } >
-          DISABLED
+          OUTLINED
         </Button>
         <Box
           sx ={{
