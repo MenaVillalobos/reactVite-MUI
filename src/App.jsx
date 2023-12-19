@@ -39,18 +39,20 @@ const App = () => {
           marginBottom: 2,
           marginTop: 2
           }
-        } >
-          CONTAINED
+        } 
+        disabled>
+          DISABLED
         </Button>
         <Button
-        variant='outlined'
+        variant='contained'
         sx = {
           { bgcolor: 'secondary',
           marginBottom: 2,
           marginTop: 2 
           }
-        } >
-          OUTLINED
+        } 
+        href='http://localhost:5173/'>
+          LINK
         </Button>
         <Box
           sx ={{
