@@ -7,7 +7,21 @@ const App = () => {
   return (
     <>
       <Container maxWidth = 'xs' sx = {{ border: 2, borderColor: '#1ABC9C', p: 2, marginTop: 4 }}>
-        <h1>My First App w/MUI</h1>
+        <Container 
+        maxWidth = 'lg'
+        sx = {{
+            display: 'flex',
+            justifyContent: 'space-between' ,
+          }} >
+          <h1>My First App w/MUI</h1>
+          <Button
+            aria-label = 'addPhoto'
+            onClick={ () => alert( 'smile! 📸')}
+            sx={{ p: 0 }}
+          >
+            <AddAPhotoIcon fontSize = 'large' />
+          </Button>
+        </Container>
         <Typography variant = 'h2' sx = {{ boxShadow: 3, marginBottom: 2 }} >
           This is an h2 component
         </Typography>
