@@ -1,4 +1,4 @@
-import { Button, Container, Typography, Box } from "@mui/material";
+import { Button, Container, Typography, Box, colors } from "@mui/material";
 import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
@@ -92,7 +92,7 @@ const App = () => {
           }} >
           <Button
             variant = 'contained'
-            startIcon = { <FavoriteIcon/> }
+            startIcon = { <FavoriteIcon style={ {color: 'red'} } /> }
             onClick = { () => {
               alert( 'you liked this 🥰' );
             }}
