@@ -1,4 +1,7 @@
 import { Button, Container, Typography, Box } from "@mui/material";
+import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 const App = () => {
   return (
@@ -22,38 +25,57 @@ const App = () => {
         >
           This is an h2 component that behaves like a paragraph
         </Typography>
-        <Button 
-          variant='text'
+        <Container sx = {{
+          display: 'flex',
+          justifyContent: 'space-between'
+        }}>
+          <Button 
+            sx = {
+              { bgcolor: 'secondary',
+              marginBottom: 2,
+              marginTop: 2
+              }
+            } 
+            onClick = { () => {
+              alert( 'handling click' );
+            } }>
+            TEXT
+          </Button>
+          <Button
+          variant = 'contained'
           sx = {
             { bgcolor: 'secondary',
             marginBottom: 2,
             marginTop: 2
             }
-          } >
-          TEXT
-        </Button>
-        <Button
-        variant='contained'
-        sx = {
-          { bgcolor: 'secondary',
-          marginBottom: 2,
-          marginTop: 2
-          }
-        } 
-        disabled>
-          DISABLED
-        </Button>
-        <Button
-        variant='contained'
-        sx = {
-          { bgcolor: 'secondary',
-          marginBottom: 2,
-          marginTop: 2 
-          }
-        } 
-        href='http://localhost:5173/'>
-          LINK
-        </Button>
+          } 
+          disabled>
+            DISABLED
+          </Button>
+          <Button
+          variant = 'contained'
+          sx = {
+            { bgcolor: 'secondary',
+            marginBottom: 2,
+            marginTop: 2 
+            }
+          } 
+          href='https://github.com/MenaVillalobos/reactVite-MUI'
+          >
+            LINK
+          </Button>
+          <Button
+          variant = 'outlined'
+          sx = {
+            { bgcolor: 'secondary',
+            marginBottom: 2,
+            marginTop: 2 
+            }
+          } 
+          >
+            OUTLINED
+          </Button>
+        </Container>
         <Box
           sx ={{
             backgroundColor: 'primary.box',
@@ -63,8 +85,31 @@ const App = () => {
         >
           This is a Box, not a div
         </Box>
+        <Container sx = {{
+            display: 'flex',
+            justifyContent: 'center',
+            padding: 1
+          }} >
+          <Button
+            variant = 'contained'
+            startIcon = { <FavoriteIcon/> }
+            onClick = { () => {
+              alert( 'you liked this 🥰' );
+            }}
+          >
+            LIKE
+          </Button>
+          <Button
+            variant = 'outlined'
+            endIcon = { <FavoriteBorderIcon/> }
+            onClick = { () => {
+              alert( 'you disliked this 😞' );
+            }}
+          >
+            DISLIKE
+          </Button>
+        </Container>
       </Container>
-
     </>
   )
 }
